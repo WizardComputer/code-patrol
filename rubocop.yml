@@ -80,18 +80,13 @@ Style/HashSyntax:
 
 # Method definitions after `private` or `protected` isolated calls need one
 # extra level of indentation.
-#
-# We break this rule in context, though, e.g. for private-only concerns,
-# so we leave it disabled.
 Layout/IndentationConsistency:
-  Enabled: false
+  Enabled: true
   EnforcedStyle: indented_internal_methods
 
 # Two spaces, no tabs (for indentation).
-#
-# Doesn't behave properly with private-only concerns, so it's disabled.
 Layout/IndentationWidth:
-  Enabled: false
+  Enabled: true
 
 Layout/LeadingCommentSpace:
   Enabled: true
@@ -168,6 +163,11 @@ Layout/SpaceInsidePercentLiteralDelimiters:
 
 # Use `hash[:key]` not `hash[ :key ]`
 Layout/SpaceInsideReferenceBrackets:
+  Enabled: true
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - 'app/views/**/*'
   Enabled: true
 
 # Use `"foo"` not `'foo'` unless escaping is required
