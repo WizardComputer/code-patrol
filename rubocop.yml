@@ -245,3 +245,6 @@ Performance/FlatMap:
 
 Performance/UnfreezeString:
   Enabled: true
+
+Lint/Debugger:
+  Enabled: true
